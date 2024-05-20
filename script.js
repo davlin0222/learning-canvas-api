@@ -8,4 +8,10 @@ const ctx = canvas.getContext("2d");
 ctx.fillStyle = "green";
 
 // Fill the entire canvas with the green rectangle
-ctx.fillRect(10, 10, 100, 100);
+ctx.fillRect(10, 10, 200, 200);
+
+// Text: "Square"
+
+ctx.fillStyle = "#eee"; // explicitly sets the text color to (default) 'black'
+ctx.font = "50px monospace";
+ctx.fillText("Square", 20, 50);
