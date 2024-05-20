@@ -8,7 +8,8 @@ Simply run the index.html file. For livereload I run it with vscode live server.
 
 # My sources
 
-[https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+-   [https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+-   Following the Canvas tutorial [https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
 
 # Thoughts (answered with generative AI)
 
@@ -17,3 +18,4 @@ Simply run the index.html file. For livereload I run it with vscode live server.
         element is designed for drawing graphics with JavaScript, not displaying HTML content directly. To show text on a canvas, you need to use JavaScript and specific text rendering functions provided by the canvas API.
 -   What is the default size of canvas
     -   The default size of a canvas element is 300 pixels wide and 150 pixels high. You can change this using HTML attributes or CSS properties.
+-   Look into WebGL
