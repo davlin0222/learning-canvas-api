@@ -23,19 +23,11 @@ function drawCenteredSquare(ctx) {
 	ctx.fillStyle = "#eee";
 	ctx.font = "50px monospace";
 
-	// Calculate text dimensions
-	const textMetrics = ctx.measureText("Square");
-	const textWidth = textMetrics.width;
-	const textHeight =
-		textMetrics.actualBoundingBoxAscent +
-		textMetrics.actualBoundingBoxDescent;
-
 	const squareCenterX = squarePosX + squareWidth / 2;
 	const squareCenterY = squarePosY + squareHeight / 2;
 
-	const textX = squareCenterX - textWidth / 2;
-	const MAGIC_NUMBER = 4;
-	const textY = squareCenterY + textHeight / 2 - MAGIC_NUMBER; // Since the text baseline is below the y coordinate
+	ctx.textAlign = "center";
+	ctx.textBaseline = "middle";
 
-	ctx.fillText("Square", textX, textY);
+	ctx.fillText("Square", squareCenterX, squareCenterY);
 }
