@@ -13,30 +13,29 @@ function drawCenteredSquare(ctx) {
 	const squareWidth = 200;
 	const squareHeight = 200;
 
-	const squarePosX = ctx.canvas.width / 2 - squareWidth * 0.5;
-	const squarePosY = ctx.canvas.width / 2 - squareHeight * 0.5;
+	const squarePosX = ctx.canvas.width / 2 - squareWidth / 2;
+	const squarePosY = ctx.canvas.width / 2 - squareHeight / 2;
 
 	// Fill the entire canvas with the green rectangle
 	ctx.fillRect(squarePosX, squarePosY, squareWidth, squareHeight);
 
-	// // Text: "Square"
-	// ctx.fillStyle = "#eee";
-	// ctx.font = "50px monospace";
+	// Text: "Square"
+	ctx.fillStyle = "#eee";
+	ctx.font = "50px monospace";
 
-	// // Calculate text dimensions
-	// const textMetrics = ctx.measureText("Square");
-	// const textWidth = textMetrics.width;
-	// const textHeight =
-	// 	textMetrics.actualBoundingBoxAscent +
-	// 	textMetrics.actualBoundingBoxDescent;
+	// Calculate text dimensions
+	const textMetrics = ctx.measureText("Square");
+	const textWidth = textMetrics.width;
+	const textHeight =
+		textMetrics.actualBoundingBoxAscent +
+		textMetrics.actualBoundingBoxDescent;
 
-	// // Calculate center coordinates of the square
-	// const squareCenterX = 105; // 10 (start) + 200 (width) / 2
-	// const squareCenterY = 105; // 10 (start) + 200 (height) / 2
+	const squareCenterX = squarePosX + squareWidth / 2;
+	const squareCenterY = squarePosY + squareHeight / 2;
 
-	// // Calculate text position for centering
-	// const textX = squareCenterX - textWidth / 2;
-	// const textY = squareCenterY + textHeight / 2; // Since the text baseline is below the y coordinate
+	const textX = squareCenterX - textWidth / 2;
+	const MAGIC_NUMBER = 4;
+	const textY = squareCenterY + textHeight / 2 - MAGIC_NUMBER; // Since the text baseline is below the y coordinate
 
-	// ctx.fillText("Square", textX, textY);
+	ctx.fillText("Square", textX, textY);
 }
