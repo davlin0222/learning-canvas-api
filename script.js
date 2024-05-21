@@ -9,6 +9,11 @@ ctx.fillStyle = "green";
 
 drawCenteredSquare(ctx, canvas);
 
+// Clear part of the canvas
+ctx.clearRect(250, 250, 120, 100);
+
+drawRectangleWithCutout(ctx, 40, 40);
+
 function drawCenteredSquare(ctx) {
 	const squareWidth = 200;
 	const squareHeight = 200;
@@ -30,4 +35,10 @@ function drawCenteredSquare(ctx) {
 	ctx.textBaseline = "middle";
 
 	ctx.fillText("Square", squareCenterX, squareCenterY);
+}
+
+function drawRectangleWithCutout(ctx, posX, posY) {
+	ctx.fillRect(posX, posY, 100, 100);
+	ctx.clearRect(posX + 20, posY + 20, 60, 60);
+	ctx.strokeRect(posX + 35, posY + 35, 30, 30);
 }
