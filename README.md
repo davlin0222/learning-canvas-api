@@ -24,3 +24,4 @@ Simply run the index.html file. For livereload I run it with vscode live server.
 -   Look into WebGL
 -   Test "The \<canvas> element can be styled just like any normal image (margin, border, background…)."
 -   measureText is weird [https://bucephalus.org/text/CanvasHandbook/CanvasHandbook.html#measuretexttext.width](https://bucephalus.org/text/CanvasHandbook/CanvasHandbook.html#measuretexttext.width)
+-   I wonder if it would be possible for me to create a small declarative canvas API framework
