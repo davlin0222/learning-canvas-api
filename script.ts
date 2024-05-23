@@ -17,11 +17,11 @@ function drawSquare(
 	const squareWidth = 200;
 	const squareHeight = 200;
 
-	ctx.fillStyle = "green"; // Set fill color to green
 	ctx.fillRect(squarePosX, squarePosY, squareWidth, squareHeight); // Draw the square
 
+	ctx.fillStyle = "white";
+
 	// Text styles and positioning
-	ctx.fillStyle = "#eee";
 	ctx.font = "50px monospace";
 	const squareCenterX = squarePosX + squareWidth / 2;
 	const squareCenterY = squarePosY + squareHeight / 2;
@@ -36,17 +36,21 @@ function drawRectangleWithCutout(
 	posX: number,
 	posY: number
 ) {
-	ctx.fillStyle = "green"; // Assuming you want the rectangle filled with green
 	ctx.fillRect(posX, posY, 100, 100); // Outer rectangle
 	ctx.clearRect(posX + 20, posY + 20, 60, 60); // Cutout
 	ctx.strokeRect(posX + 35, posY + 35, 30, 30); // Inner rectangle (outline)
 }
 
+ctx.fillStyle = "green"; // Set fill color to green
+
 // Draw the initial square
 drawSquare(ctx, 100, 100);
+
+ctx.fillStyle = "white";
 
 // Clear a part of the canvas (to demonstrate clearing)
 ctx.clearRect(250, 250, 120, 100);
 
+ctx.fillStyle = "gray"; // Assuming you want the rectangle filled with green
 // Draw the rectangle with cutout
 drawRectangleWithCutout(ctx, 40, 40);
