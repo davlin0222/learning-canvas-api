@@ -2,8 +2,8 @@
 const canvas = document.getElementById("canvas") as HTMLCanvasElement;
 
 // Set canvas dimensions (optional)
-canvas.width = 800;
-canvas.height = 800;
+canvas.width = 400;
+canvas.height = 400;
 
 // Get the 2D rendering context, with type assertion
 const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;

@@ -1,8 +1,8 @@
 // Get reference to the <canvas> element, using type assertion for safety
 const canvas = document.getElementById("canvas");
 // Set canvas dimensions (optional)
-canvas.width = 800;
-canvas.height = 800;
+canvas.width = 400;
+canvas.height = 400;
 // Get the 2D rendering context, with type assertion
 const ctx = canvas.getContext("2d");
 // Function to draw a square with text inside

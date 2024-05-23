@@ -2,11 +2,12 @@
 
 This project is for me to practice learning the Canvas API for an upcoming job opportunity of mine.
 
-![square-24-05-20](docs/assets/square-24-05-20.png)
+![square-24-05-23](docs/assets/square-24-05-23.png)
 
 # Getting started
 
-Simply run the index.html file. For livereload I run it with vscode live server.
+-   To run: Simply open index.html file in browser. For livereload I run it with vscode live server.
+-   For development: Run `npm run start` to compile the typescript file `script.ts`.
 
 # My sources
 
