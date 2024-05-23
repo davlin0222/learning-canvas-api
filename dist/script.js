@@ -25,6 +25,15 @@ function drawRectangleWithCutout(ctx, posX, posY) {
     ctx.clearRect(posX + 20, posY + 20, 60, 60); // Cutout
     ctx.strokeRect(posX + 35, posY + 35, 30, 30); // Inner rectangle (outline)
 }
+function drawPath(ctx) {
+    ctx.fillStyle = "#999"; // replace with colored border
+    ctx.beginPath();
+    ctx.moveTo(75, 50);
+    ctx.lineTo(100, 75);
+    ctx.lineTo(100, 25);
+    ctx.fill();
+    ctx.fillStyle = "#eee";
+}
 ctx.fillStyle = "green"; // Set fill color to green
 // Draw the initial square
 drawSquare(ctx, 100, 100);
@@ -34,4 +43,5 @@ ctx.clearRect(250, 250, 120, 100);
 ctx.fillStyle = "gray"; // Assuming you want the rectangle filled with green
 // Draw the rectangle with cutout
 drawRectangleWithCutout(ctx, 40, 40);
+drawPath(ctx);
 //# sourceMappingURL=script.js.map
