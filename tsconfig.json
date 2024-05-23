@@ -8,7 +8,7 @@
 		"moduleResolution": "node",
 		"noEmitOnError": true,
 		"noImplicitAny": false,
-		"outDir": "./",
+		"outDir": "./dist",
 		"removeComments": false,
 		"sourceMap": true,
 		"target": "es6"
