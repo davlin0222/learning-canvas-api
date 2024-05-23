@@ -1,0 +1,19 @@
+{
+	"name": "learning--canvas-api",
+	"version": "1.0.0",
+	"description": "This project is for me to practice learning the Canvas API for an upcoming job opportunity of mine.",
+	"main": "script.js",
+	"directories": {
+		"doc": "docs"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"tsc": "tsc"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"typescript": "^5.4.5"
+	}
+}
